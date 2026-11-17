@@ -51,6 +51,8 @@
     }
 
     let first-grid = before-logo-info
+
+    v(1cm)
     if class != "" {
         first-grid.push(
             (
@@ -193,7 +195,7 @@
       rect_temp(placement: top + left, dx: -6cm, dy: -2cm, rotation: -40deg, fill: light, width: 20cm)
       rect_temp(placement: top + right, dx: 6cm, dy: -2cm, rotation: 40deg, width: 20cm)
       rect_temp(placement: top, dx: -5cm, rotation: 0deg, width: 25cm)
-      
+
       rect_temp(placement: top + left, dx: -3cm, dy: -3cm, rotation: -20deg, fill: secondary, width: 20cm)
       rect_temp(placement: top + right, dx: 3cm, dy: -3cm, rotation: 20deg, fill: secondary, width: 20cm)
 

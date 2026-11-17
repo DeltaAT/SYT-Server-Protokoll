@@ -50,19 +50,19 @@
   //if fancy-design {
   show heading: set text(fill: title-color)
   //}
-  
+
   set page(
     paper: "a4",
     margin: (top: 2.95cm, bottom: 2.54cm, left: 1.57cm, right: 1.57cm),
     numbering: "1",
     header: context {
       if counter(page).get().first() > 1 {
-        
+
       grid(
         columns: 3 * (1fr,),
         rows: (7fr, 1fr),
         [
-          #author
+          //#author
           #if fancy-design {
              place(
               left + top,
@@ -85,7 +85,7 @@
             #logo
           ]
         ],
-        
+
         [
           #line(length: 300%, stroke: 0.5pt)
         ],
@@ -106,12 +106,12 @@
       ]
     },
   )
-  
+
   set document(
     title: title,
     author: author,
   )
-  
+
   set text(
     font: "Arial",
     size: 12pt,
@@ -174,10 +174,10 @@
 
   show outline.entry.where(
     level: 1
-  ): set text(weight: "bold") 
+  ): set text(weight: "bold")
   outline()
   pagebreak()
-  
+
   if do-lof {
     show outline.entry: it => {
       it.indented(none, it.prefix() + ": " + it.inner())
@@ -217,9 +217,9 @@
   if do-lot or do-lof {
     pagebreak()
   }
-  
+
   body
-  
+
   if do-bib {
     bibliography(bib-src, style: "ieee",
     title: [
@@ -231,6 +231,3 @@
     ])
   }
 }
-
-
-
