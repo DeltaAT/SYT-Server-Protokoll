@@ -16,5 +16,11 @@
   school: "HTBLuVA Salzburg",
   department: "Informationstechnologie",
   teachers: ("Schwabl Patrick, Ing. Dipl.-Ing. (FH)", ),
-  class-long: "SYT-Labor"
+  class-long: "SYT-Labor",
+  do-bib: false
 )
+
+
+#include "src/01_Laboruebung_1.typ"
+
+#pagebreak()
